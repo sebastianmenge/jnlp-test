@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8070/GovernikusWebSigner//">
+
+  <information>
+    <title>Governikus WebSigner</title>
+    <vendor>
+      Governikus GmbH &amp; Co. KG
+    </vendor>
+    <homepage href="http://www.governikus.com"/>
+    <description kind="short">
+      Governikus WebSigner
+    </description>
+    <icon href="jnlp_logo.gif"/>
+    <icon kind="splash" href="splash.gif"/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+
+  <resources>
+    <j2se version="1.8"/>
+
+    <jar href="lib/signer-webAppSigner.jar" main="true"/>
+
+    <jar href="lib/signer-framework.jar"/>
+    <jar href="lib/signer-sign.jar"/>
+    <jar href="lib/signer-verify.jar"/>
+    <jar href="lib/signer-debugMode.jar"/>
+
+    <jar href="lib/ecard-cades-format.jar"/>
+    <jar href="lib/ecard-framework.jar"/>
+    <jar href="lib/ecard-funshow.jar"/>
+    <jar href="lib/ecard-funsign.jar"/>
+    <jar href="lib/ecard-funsmartcard.jar"/>
+    <jar href="lib/ecard-funsoftkey.jar"/>
+    <jar href="lib/ecard-funtimestamp.jar"/>
+    <jar href="lib/ecard-funverify.jar"/>
+    <jar href="lib/ecard-keysupplier.jar"/>
+    <jar href="lib/ecard-model.jar"/>
+    <jar href="lib/ecard-pades-format.jar"/>
+    <jar href="lib/ecard-rfc3161-format.jar"/>
+    <jar href="lib/ecard-smime-format.jar"/>
+    <jar href="lib/ecard-x509-format.jar"/>
+    <jar href="lib/ecard-xades-format.jar"/>
+
+    <jar href="lib/cadestoolbox.jar"/>
+    <jar href="lib/padestoolbox.jar"/>
+    <jar href="lib/xadestoolbox.jar"/>
+
+    <jar href="lib/viewer-modules.jar"/>
+    <jar href="lib/xmlviewer.jar"/>
+    <jar href="lib/xmlviewer-df.jar"/>
+    <jar href="lib/xmlviewer-format-ubl.jar"/>
+    <jar href="lib/xmlviewer-format-xhelloworld.jar"/>
+    <jar href="lib/xmlviewer-format-xPersonenstand.jar"/>
+
+    <jar href="lib/vi-framework.jar"/>
+    <jar href="lib/vi-plugin-asic.jar"/>
+    <jar href="lib/vi-plugin-cades.jar"/>
+    <jar href="lib/vi-plugin-cms.jar"/>
+    <jar href="lib/vi-plugin-demail.jar"/>
+    <jar href="lib/vi-plugin-osci.jar"/>
+    <jar href="lib/vi-plugin-pades.jar"/>
+    <jar href="lib/vi-plugin-smime.jar"/>
+    <jar href="lib/vi-plugin-tsp.jar"/>
+    <jar href="lib/vi-plugin-x509.jar"/>
+    <jar href="lib/vi-plugin-xades.jar"/>
+    <jar href="lib/vi-util-ades.jar"/>
+    <jar href="lib/vi-util-xmlsignature.jar"/>
+
+    <jar href="lib/algorithm_identifier.jar"/>
+    <jar href="lib/algorithm_catalog.jar"/>
+    <jar href="lib/base64.jar"/>
+    <jar href="lib/ci_view.jar"/>
+    <jar href="lib/ci.jar"/>
+    <jar href="lib/ecard.jar"/>
+    <jar href="lib/ComponentInfo.jar"/>
+    <jar href="lib/commons-codec.jar"/>
+    <jar href="lib/gov-commons-general.jar"/>
+    <jar href="lib/gov-commons-io.jar"/>
+    <jar href="lib/gov-commons-mimetype.jar"/>
+    <jar href="lib/gov-pfi.jar"/>
+    <jar href="lib/commons-logging.jar"/>
+    <jar href="lib/cssparser.jar"/>
+    <jar href="lib/client_ca_certs.jar"/>
+    <jar href="lib/diHandler.jar"/>
+    <jar href="lib/fontbox.jar"/>
+    <jar href="lib/http-core.jar"/>
+    <jar href="lib/ISOCountryCodeType-V2006.jar"/>
+    <jar href="lib/itext.jar"/>
+    <jar href="lib/jai_codec.jar"/>
+    <jar href="lib/jai_core.jar"/>
+    <jar href="lib/jdic.jar"/>
+    <jar href="lib/jcl-over-slf4j.jar"/>
+    <jar href="lib/jul-to-slf4j.jar"/>
+    <jar href="lib/log4j.jar"/>
+    <jar href="lib/mail.jar"/>
+    <jar href="lib/oasis-dss-core-schema-v1.0-os.jar"/>
+    <jar href="lib/oasis-sstc-saml-schema-assertion-1.1.jar"/>
+    <jar href="lib/osci-bibliothek.jar"/>
+    <jar href="lib/pdfbox.jar"/>
+    <jar href="lib/poi.jar"/>
+    <jar href="lib/poi-scratchpad.jar"/>
+    <jar href="lib/sac.jar"/>
+    <jar href="lib/serializer.jar"/>
+    <jar href="lib/slf4j-api.jar"/>
+    <jar href="lib/slf4j-log4j12.jar"/>
+    <jar href="lib/ts_102231v020000_xsd.jar"/>
+    <!--jar href="lib/webservices-rt.jar" /-->
+    <jar href="lib/XAdES-1-3-2.jar"/>
+    <jar href="lib/xalan.jar"/>
+    <jar href="lib/xenc-schema.jar"/>
+    <jar href="lib/xercesImpl.jar"/>
+    <jar href="lib/flying-saucer-core.jar"/>
+    <jar href="lib/xkms20.jar"/>
+    <jar href="lib/XKMSExtensionsPEPPOL_v2.2.jar"/>
+    <jar href="lib/xml-apis.jar"/>
+    <jar href="lib/xml.jar"/>
+    <jar href="lib/xmldsig-core-schema.jar"/>
+    <jar href="lib/xmlsec.jar"/>
+
+    <extension name="provider" href="http://localhost:8070/GovernikusWebSigner//provider.jnlp"/>
+    <extension name="govcp" href="http://localhost:8070/GovernikusWebSigner//govcp.jnlp"/>
+    <extension name="mcard" href="http://localhost:8070/GovernikusWebSigner//mcard.jnlp"/>
+
+  </resources>
+
+  <application-desc main-class="de.bos_bremen.ecard.client.gui.GUIClient">
+
+    <argument>jnlp.source</argument>
+    <argument>http://localhost:3333///c99e5770-4bd7-47bc-8589-79fcdc510d46/11002002-1991-626-0-ghinweisteil.xml</argument>
+
+
+    <argument>jnlp.source</argument>
+    <argument>http://localhost:3333///c99e5770-4bd7-47bc-8589-79fcdc510d46/11002002-1991-626-0-ghinweisteil_pdfa.pdf</argument>
+
+
+    <argument>jnlp.source</argument>
+    <argument>http://localhost:3333///c99e5770-4bd7-47bc-8589-79fcdc510d46/11002002-1991-626-0-gurkundlteil.xml</argument>
+
+
+    <argument>jnlp.source</argument>
+    <argument>http://localhost:3333///c99e5770-4bd7-47bc-8589-79fcdc510d46/11002002-1991-626-0-gurkundlteil_pdfa.pdf</argument>
+
+
+    <argument>jnlp.source</argument>
+    <argument>http://localhost:3333///c99e5770-4bd7-47bc-8589-79fcdc510d46/11002002-1991-626-0-gurkundlteil_pdfxml.pdf</argument>
+
+
+    <argument>jnlp.configurationFile</argument>
+    <argument>/tmp/pu_files/verfuegen/c99e5770-4bd7-47bc-8589-79fcdc510d46/configuration.xml</argument>
+
+    <argument>jnlp.dest</argument>
+    <argument>http://172.16.32.31:8090/api/verfuegen/governikus/save?processID=2e2a24fd-335c-4c8f-a483-afd9df099078</argument>
+
+    <argument>jnlp.targetFolderType</argument>
+    <argument>oneSpecial</argument>
+
+    <argument>jnlp.rcURL</argument>
+    <argument>http://172.16.32.31:8090/api/verfuegen/governikus/rc?processID=2e2a24fd-335c-4c8f-a483-afd9df099078</argument>
+
+    <argument>jnlp.sigFormat</argument>
+    <argument>detachedPKCS7</argument>
+
+    <argument>jnlp.processPolicy</argument>
+    <argument>skipCompletedStep</argument>
+
+    <argument>jnlp.serialnumber</argument>
+    <argument>automatic</argument>
+
+    <argument>jnlp.pdfSignatureType</argument>
+    <argument>noPdfInline</argument>
+
+    <argument>jnlp.xmlSignatureType</argument>
+    <argument>noXmlInline</argument>
+
+    <argument>jnlp.log4j.configuration</argument>
+    <argument>log4j-signer-debug.xml</argument>
+
+    <argument>jnlp.enableDuplicateSignatures</argument>
+    <argument>yes</argument>
+
+    <argument>jnlp.enablePseudonymSignatures</argument>
+    <argument>yes</argument>
+
+    <argument>jnlp.createtimestamp</argument>
+    <argument>no</argument>
+
+    <argument>jnlp.helpPath</argument>
+    <argument>http://localhost:8070/GovernikusWebSigner/</argument>
+
+  </application-desc>
+</jnlp>
